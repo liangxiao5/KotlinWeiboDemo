@@ -35,6 +35,8 @@ dependencies {
     implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
     implementation 'com.google.code.gson:gson:2.8.4'
     implementation 'com.sina.weibo.sdk:core:4.1.0:openDefaultRelease@aar'
+    implementation 'com.android.support:design:26.0.1'
+
 //    implementation 'androidx.core:core-ktx:1.0.0-alpha1'
 
     testImplementation 'junit:junit:4.12'
