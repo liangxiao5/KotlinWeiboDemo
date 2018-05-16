@@ -26,4 +26,8 @@ object Api {
         return retrofit.create(WeiboStatusService::class.java)
     }
 
+    fun getSearchSevice():SearchService{
+        return retrofit.create(SearchService::class.java)
+    }
+
 }

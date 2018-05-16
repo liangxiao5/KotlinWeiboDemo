@@ -1,6 +1,7 @@
 package com.example.liangxiao.kotlinpractice
 
 import android.app.Application
+import com.facebook.drawee.backends.pipeline.Fresco
 import com.sina.weibo.sdk.WbSdk
 import com.sina.weibo.sdk.auth.AuthInfo
 
@@ -15,6 +16,6 @@ class App: Application() {
         super.onCreate()
         var authInfo = AuthInfo(this,"1663491697","https://api.weibo.com/oauth2/default.html",SCOPE)
         WbSdk.install(this,authInfo)
-
+        Fresco.initialize(this)
     }
 }

@@ -1,68 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:orientation="vertical">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
+        android:orientation="horizontal">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/user_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="@dimen/normalPadding"
+            app:placeholderImage="@drawable/basketball"
+            />
 
         <TextView
             android:id="@+id/user_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="user_name"
-            android:padding="@dimen/normalPadding"
-            />
+            android:padding="@dimen/normalPadding" />
 
         <TextView
             android:id="@+id/text_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="2018-5-16 15:24"
-            android:padding="@dimen/normalPadding"
-            />
+            android:padding="@dimen/normalPadding" />
     </LinearLayout>
 
     <TextView
-        android:id="@+id/timeline_item"
+        android:id="@+id/content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="aaaaaaaaaaa"
-        android:paddingLeft="@dimen/normalPadding"
-        />
+        android:paddingLeft="@dimen/normalPadding" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
 
             <ImageButton
                 android:id="@+id/share_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="null"
+                android:background="@null"
                 android:padding="@dimen/normalPadding"
-                android:src="@drawable/ic_share"
-                />
+                android:src="@drawable/ic_share" />
 
             <TextView
                 android:id="@+id/share_count"
                 android:layout_width="@dimen/normalSize"
                 android:layout_height="@dimen/normalSize"
-                android:hint="1"
-                />
+                android:hint="1" />
         </LinearLayout>
 
         <LinearLayout
@@ -70,24 +69,21 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
 
             <ImageButton
                 android:id="@+id/comments_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="null"
+                android:background="@null"
                 android:padding="@dimen/normalPadding"
-                android:src="@drawable/ic_judge"
-                />
+                android:src="@drawable/ic_judge" />
 
             <TextView
                 android:id="@+id/comments_count"
                 android:layout_width="@dimen/normalSize"
                 android:layout_height="@dimen/normalSize"
-                android:hint="1"
-                />
+                android:hint="1" />
         </LinearLayout>
 
         <LinearLayout
@@ -95,24 +91,21 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
 
             <ImageButton
                 android:id="@+id/like_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="null"
+                android:background="@null"
                 android:padding="@dimen/normalPadding"
-                android:src="@drawable/ic_like"
-                />
+                android:src="@drawable/ic_like" />
 
             <TextView
                 android:id="@+id/like_count"
                 android:layout_width="@dimen/normalSize"
                 android:layout_height="@dimen/normalSize"
-                android:hint="1"
-                />
+                android:hint="1" />
         </LinearLayout>
 
     </LinearLayout>
