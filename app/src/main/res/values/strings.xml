@@ -1,8 +1,12 @@
 <resources>
     <string name="app_name">Practice</string>
     <string name="favorite">Favorite</string>
+    <string name="home">Weibo</string>
     <string name="message">Message</string>
-    <string name="discover">Search</string>
-    <string name="person">Person</string>
+    <string name="discover">Discover</string>
+    <string name="person">Me</string>
     <string name="add">Add</string>
+    <string name="weibo">Weibo</string>
+    <string name="follow">Follow</string>
+    <string name="follower">Follower</string>
 </resources>

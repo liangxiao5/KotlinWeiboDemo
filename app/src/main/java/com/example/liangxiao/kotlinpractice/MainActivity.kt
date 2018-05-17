@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
             R.id.timeline to TimelineFragment(),
             R.id.message to MessageFragment(),
             R.id.discover to SearchFragment(),
-            R.id.person to PersonFragment()
+            R.id.person to MeFragment()
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,8 +25,6 @@ class MainActivity : AppCompatActivity() {
             true
         }
         navigation.selectedItemId = R.id.timeline
-
-
     }
 
 

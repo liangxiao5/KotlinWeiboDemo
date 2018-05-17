@@ -11,6 +11,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 object Api {
     const val baseUrl = "https://api.weibo.com/2/"
     var accessToken = Oauth2AccessToken()
+
     private val retrofit by lazy {
         Retrofit.Builder()
                 .baseUrl(baseUrl)
@@ -28,6 +29,10 @@ object Api {
 
     fun getSearchSevice():SearchService{
         return retrofit.create(SearchService::class.java)
+    }
+
+    fun getUserInfo():UserShowService{
+        return  retrofit.create(UserShowService::class.java)
     }
 
 }

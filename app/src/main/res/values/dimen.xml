@@ -2,4 +2,5 @@
 <resources>
     <dimen name="normalPadding">10dp</dimen>
     <dimen name="normalSize">24dp</dimen>
+    <dimen name="userShowSpace">5dp</dimen>
 </resources>
