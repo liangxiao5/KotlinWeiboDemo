@@ -56,7 +56,7 @@ class LoginActivity: AppCompatActivity() {
         })
 
         val token = AccessTokenKeeper.readAccessToken(this)
-        if (token != null && token.isSessionValid && token.expiresTime * 1000 < System.currentTimeMillis()){
+        if (token != null && token.isSessionValid){
             Api.accessToken = token
             jumpToMain()
 

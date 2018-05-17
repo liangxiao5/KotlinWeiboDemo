@@ -6,5 +6,6 @@ import retrofit2.http.Query
 
 interface UserShowService {
     @GET("users/show.json")
-    fun getUserInfo(@Query("uid") uid:Int,@Query("access_token") token:String = Api.accessToken.token):Observable<UserData>
+    fun getUserInfo(@Query("uid") uid:String = Api.accessToken.uid,
+                    @Query("access_token") token:String = Api.accessToken.token):Observable<UserData>
 }

@@ -31,8 +31,12 @@ object Api {
         return retrofit.create(SearchService::class.java)
     }
 
-    fun getUserInfo():UserShowService{
+    fun getUserInfomation():UserShowService{
         return  retrofit.create(UserShowService::class.java)
+    }
+
+    fun getUserTimeLine(): WeiboStatusService{
+        return retrofit.create(WeiboStatusService::class.java)
     }
 
 }

@@ -10,4 +10,7 @@ import retrofit2.http.Query
 interface WeiboStatusService {
     @GET("statuses/home_timeline.json")
     fun getTimeLine(@Query("access_token") token:String = Api.accessToken.token):Observable<TimeLine>
+
+    @GET("statuses/user_timeline.json")
+    fun getUserTimeLine(@Query("access_token") token: String = Api.accessToken.token):Observable<TimeLine>
 }
