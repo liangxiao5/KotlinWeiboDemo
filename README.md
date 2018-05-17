@@ -9,3 +9,5 @@
 
 Me页面效果图如下：
 
+![Me](https://raw.githubusercontent.com/Lucyliang5/KotlinWeiboDemo/master/Snapshots/Me.gif)
+
